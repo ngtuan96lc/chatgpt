@@ -1,0 +1,120 @@
+body {
+  background: linear-gradient(120deg, rgba(23, 190, 187, 1), rgba(240, 166, 202, 1));
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+#root {
+  max-width: 1270px;
+  margin: 0 auto;
+}
+.wrapper-chatbox h1 {
+  text-align: center;
+  color: #FFF;
+}
+.wrapper-chatbox .first-message {
+  text-align: center;
+  font-style: italic;
+}
+.wrapper-chatbox .formChat {
+  max-width: 80%;
+  margin: 20px auto;
+  background: linear-gradient(120deg, rgba(23, 190, 187, 1), rgba(240, 166, 202, 1));
+  opacity: 0.9;
+  border-radius: 0;
+  box-shadow: 1px 0px 7px 0px #ababab;
+}
+.wrapper-chatbox .formChat .message-list {
+  max-height: 100%;
+  height: 500px; 
+  display: block;
+  padding: 20px 0;
+  overflow-y: scroll;
+  
+}
+.message-list::-webkit-scrollbar-thumb, .formChat textarea#inp-message::-webkit-scrollbar-thumb {
+  background-color: #a8a8a8;
+  border-radius: 20px;
+  border: 5px solid transparent;
+  background-clip: content-box;
+}
+.message-list:hover::-webkit-scrollbar-thumb, .formChat textarea#inp-message:hover::-webkit-scrollbar-thumb {
+  background-color: #484848;
+}
+.message-list::-webkit-scrollbar, .formChat textarea#inp-message::-webkit-scrollbar {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+.bot {
+  float: left;
+  text-align: left;
+}
+.human {
+  float: right;
+  text-align: right;
+}
+.formChat .message-list .message {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1em 0;
+  height: auto;
+  width: 70%;
+  border-radius: 5px;
+  margin: 5px 10px;
+  overflow: auto;
+  position: relative;
+}
+.message-text {
+  color: #FFF;
+  font-size: 1em;
+  margin: 0 2.8em;
+}
+
+
+.formChat .message-box {
+  position: relative;
+}
+.formChat textarea#inp-message {
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.03);
+  bottom: 0;
+  left: 0;
+  border: none;
+  width: 100%;
+  padding: 1.2em;
+  padding-right: 5em;
+  outline: none;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.2em;
+  font-weight: 300;
+}
+.formChat textarea#inp-message::placeholder {
+  color: rgba(255, 255, 255, 0.9);
+}
+.formChat .btn-send {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  z-index: 100;
+  background-color: #bd556c5e;
+  color: white;
+}
+.formChat .btn-send:hover {
+  color: white;
+  background-color: rgb(120 125 183)
+}
